@@ -1,6 +1,6 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Background shape -->
-    <item android:drawable="@android:color/transparent" />
+    <item android:drawable="@color/blue2" />
 
     <!-- Border shape -->
     <item
@@ -10,8 +10,8 @@
         android:bottom="-1dp">
         <shape android:shape="rectangle">
             <stroke
-                android:width="3dp"
-                android:color="#FFA500"
+                android:width="2dp"
+                android:color="@color/black"
             />
         </shape>
     </item>

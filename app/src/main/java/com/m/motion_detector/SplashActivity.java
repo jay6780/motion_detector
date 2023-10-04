@@ -10,7 +10,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
-    private static final long SPLASH_DISPLAY_DURATION = 2000;
+    private static final long SPLASH_DISPLAY_DURATION = 4000;
 
     private ProgressBar progressBar;
     private int progressStatus = 0;
@@ -19,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         // Initialize the progress bar
         progressBar = findViewById(R.id.progressbar);
 
@@ -27,7 +27,6 @@ public class SplashActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.hide();
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
             // Create a handler to update the progress bar
             Handler handler = new Handler();
@@ -67,7 +66,7 @@ public class SplashActivity extends AppCompatActivity {
                         }
                     }).start();
                 }
-            }, 0);
+            }, 1000);
         }
     }
 }

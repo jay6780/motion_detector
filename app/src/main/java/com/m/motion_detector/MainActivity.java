@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             countbtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i = new Intent(getApplicationContext(), CountActivity.class);
+                    Intent i = new Intent(getApplicationContext(), CountAct.class);
                     startActivity(i);
                     overridePendingTransition(0, 0);
                     finish();

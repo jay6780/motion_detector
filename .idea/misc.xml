@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Server/AndroidStudioProjects/motion_detector/app/src/main/res/drawable/button_background.xml" value="0.1605" />
+        <entry key="..\:/Users/Server/AndroidStudioProjects/motion_detector/app/src/main/res/drawable/button_background2.xml" value="0.162" />
+        <entry key="..\:/Users/Server/AndroidStudioProjects/motion_detector/app/src/main/res/layout-land/activity_count.xml" value="0.25" />
+        <entry key="..\:/Users/Server/AndroidStudioProjects/motion_detector/app/src/main/res/layout-land/activity_fish_count_list.xml" value="0.2310405643738977" />
+        <entry key="..\:/Users/Server/AndroidStudioProjects/motion_detector/app/src/main/res/layout-land/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/Server/AndroidStudioProjects/motion_detector/app/src/main/res/layout/activity_count.xml" value="0.25" />
+        <entry key="..\:/Users/Server/AndroidStudioProjects/motion_detector/app/src/main/res/layout/activity_fish_count_list.xml" value="0.22" />
+        <entry key="..\:/Users/Server/AndroidStudioProjects/motion_detector/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/user/Downloads/jayzone/Motion_detector/app/src/main/res/drawable-v24/oblong_button.xml" value="0.1605" />
         <entry key="..\:/Users/user/Downloads/jayzone/Motion_detector/app/src/main/res/drawable/button_background.xml" value="0.1605" />
         <entry key="..\:/Users/user/Downloads/jayzone/Motion_detector/app/src/main/res/drawable/wave.xml" value="0.1605" />

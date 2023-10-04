@@ -5,21 +5,34 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
-public class CountActivity extends AppCompatActivity {
-
+public class CountAct extends AppCompatActivity {
+    ImageView counts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_count);
+        counts = findViewById(R.id.img);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.hide();
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        }
 
+          counts.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View view) {
+                  Intent i = new Intent(getApplicationContext(),Fish_count_list.class);
+                  startActivity(i);
+                  finish();
+                  overridePendingTransition(0,0);
+
+              }
+          });
+        }
     }
     public void onBackPressed() {
         Intent i = new Intent(getApplicationContext(), MainActivity.class);

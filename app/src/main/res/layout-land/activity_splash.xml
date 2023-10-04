@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
         android:gravity="center">
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/java_lottie"
@@ -25,6 +24,7 @@
      <LinearLayout
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
+         android:layout_marginTop="25dp"
          android:orientation="vertical"
          android:gravity="center"
          android:layout_alignParentBottom="true"
