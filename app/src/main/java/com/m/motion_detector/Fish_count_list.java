@@ -2,6 +2,7 @@ package com.m.motion_detector;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,10 +15,12 @@ import android.widget.Toast;
 
 public class Fish_count_list extends AppCompatActivity  implements AdapterView.OnItemSelectedListener {
     String[] position = {"Choose","Recent"};
+    AppCompatButton back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fish_count_list);
+        back = findViewById(R.id.back);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -32,6 +35,16 @@ public class Fish_count_list extends AppCompatActivity  implements AdapterView.O
 
             //set array adapter to fill spinner
             spin.setAdapter(aa);
+
+            back.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(getApplicationContext(),front_page.class);
+                    startActivity(i);
+                    overridePendingTransition(0,0);
+                    finish();
+                }
+            });
         }
     }
 
@@ -52,7 +65,7 @@ public class Fish_count_list extends AppCompatActivity  implements AdapterView.O
 
     }
     public void onBackPressed(){
-        Intent i = new Intent(getApplicationContext(),CountAct.class);
+        Intent i = new Intent(getApplicationContext(),front_page.class);
         startActivity(i);
         overridePendingTransition(0,0);
         finish();

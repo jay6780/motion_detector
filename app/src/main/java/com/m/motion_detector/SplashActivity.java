@@ -56,7 +56,7 @@ public class SplashActivity extends AppCompatActivity {
                             // After the progress is complete, navigate to the main activity
                             handler.post(new Runnable() {
                                 public void run() {
-                                    Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
+                                    Intent mainIntent = new Intent(SplashActivity.this, login.class);
                                     startActivity(mainIntent);
 
                                     // Close this activity
